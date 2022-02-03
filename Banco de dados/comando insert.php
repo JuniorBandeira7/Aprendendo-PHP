@@ -2,10 +2,13 @@
 
      include "Conexao.inc";
 
-    $resultado=mysqli_query($con,"SELECT * FROM  gafanhotos");//query==comando
-    $linhas=mysqli_num_rows($resultado);//num_rows==numero de linhas
-    echo $linhas;
+    $vnome="teste";
+    $vprofissao="teste";
+    $sexo="M";
+    $nacionalidade="teste";
 
+    $sql="INSERT INTO gafanhotos VALUES (NULL, '$vnome', '$vprofissao', NULL, '$sexo', NULL, NULL, '$nacionalidade')";
+    $resultado=mysqli_query($con,$sql);
      mysqli_close($con);
 
 ?>
