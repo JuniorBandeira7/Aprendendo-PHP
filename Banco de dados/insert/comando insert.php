@@ -7,7 +7,7 @@
     $sexo="M";
     $nacionalidade="teste";
 
-    $sql="INSERT INTO gafanhotos VALUES (NULL, '$vnome', '$vprofissao', NULL, '$sexo', NULL, NULL, '$nacionalidade')";
+    $sql="INSERT INTO usuarios VALUES (NULL, '$vnome', '$vprofissao', NULL, '$sexo', NULL, NULL, '$nacionalidade')";
     $resultado=mysqli_query($con,$sql);
      mysqli_close($con);
 

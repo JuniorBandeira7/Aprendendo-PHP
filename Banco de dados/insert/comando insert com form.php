@@ -2,12 +2,11 @@
 
      include "Conexao.inc";
 
-    $vcodigo=$_POST["F_Cod"];
-    $vproduto=$_POST["F_Prod"];
-    $vpreco=$_POST["F_Preco"];
-    $vqtde=$_POST["F_Qtde"];
+    $vnome=$_POST["F_Nome"];
+    $vsenha=$_POST["F_Senha"];
+    $vemail=$_POST["F_Email"];
 
-    $sql="INSERT INTO produtos values ('$vcodigo', '$vproduto', $vpreco, $vqtde)";
+    $sql="INSERT INTO usuarios values (NULL, '$vnome', '$vsenha', '$vemail')";
     $resultado=mysqli_query($con, $sql);
     $linhas=mysqli_affected_rows($con);
 

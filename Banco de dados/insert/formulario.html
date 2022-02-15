@@ -9,17 +9,14 @@
 <body>
     <form action="comando insert com form.php" name="F_CadProd"  method="post">
 
-        <label for="">Codigo</label><br>
-        <input type="text" name="F_Cod" size="40" maxlength="30"><br><br><!--o maxlength deve ser o mesmo numero do máximo de caracteres no phpmyadmin-->
+        <label for="">Nome:</label><br>
+        <input type="text" name="F_Nome" size="40" maxlength="10"><br><br><!--o maxlength deve ser o mesmo numero do máximo de caracteres no phpmyadmin-->
 
-        <label for="">Produto:</label><br>
-        <input type="text" name="F_Prod" size="40" maxlength="50"><br><br>
+        <label for="">Senha:</label><br>
+        <input type="password" name="F_Senha" size="10" maxlength="16"><br><br>
 
-        <label for="">Preço:</label><br>
-        <input type="text" name="F_Preco" size="10"><br><br>
-
-        <label for="">Quantidade:</label><br>
-        <input type="text" name="F_Qtde" size="10"><br><br>
+        <label for="">Email:</label><br>
+        <input type="text" name="F_Email" size="10" maxlength="100"><br><br>
 
         <input type="submit" value="Gravar">
         <input type="reset" value="Limpar">
